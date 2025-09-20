@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .underline-anim{
+    position: relative;
+    cursor: pointer;
+    }
+
+.underline-anim::after {
+    content: '';
+    background-color: #7F7FFF;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: 300ms;
+    }
+
+.underline-anim:hover::after{
+    width: 100%;
+    }
+    
+    </style>
+</head>
+<body>
+       <div class="flex justify-center z-1">
+       <nav class="bg-[#60efff] rounded-full mt-4 h-[50px] flex justify-center w-[400px] custom-shadow">
+         <ul class="flex items-center justify-around text-white w-full">
+           <li class="underline-anim"><a href="">Home</a></li>
+           <li class="underline-anim"><a href="">Materi</a></li>
+           <li class="underline-anim"><a href="">Quiz</a></li>
+           <li class="underline-anim"><a href="lkpd6 praktik diskusi.html">Diskusi</a></li>
+           <li class="underline-anim">Game</li>
+         </ul>
+       </nav>
+   </div>
+</body>
+</html>
